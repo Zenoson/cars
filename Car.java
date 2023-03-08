@@ -23,25 +23,25 @@ public abstract class Car {
 
     @Override
     public String toString() {
-        return "";
+        return String.format("%s $s ($.1f mi)", make, model, mileage);
     }
 
     public double getMileage() {
-        return 1.0;
+        return mileage;
     }
 
     public String getMake() {
-        return "hi";
+        return make;
     }
 
     public String getModel() {
-        return "hi";
+        return model;
     }
 
     public abstract double getRemainingRange();
 
     protected void addMileage(double miles) {
-
+        mileage+=miles;
     }
 
     public int roadTrip(List<Double> milesEachDay) {
