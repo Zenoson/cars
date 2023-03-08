@@ -27,21 +27,21 @@ public abstract class Car {
     }
 
     public double getMileage() {
-        return 1.0;
+        return mileage;
     }
 
     public String getMake() {
-        return "hi";
+        return make;
     }
 
     public String getModel() {
-        return "hi";
+        return model;
     }
 
     public abstract double getRemainingRange();
 
     protected void addMileage(double miles) {
-
+        mileage+=miles;
     }
 
     public int roadTrip(List<Double> milesEachDay) {
