@@ -40,11 +40,15 @@ public abstract class Car {
 
     public abstract double getRemainingRange();
 
-    protected void addMileage(double miles) {
+    protected void addMileage(double miles) throws IllegalArgumentException {
+        if (miles<0)
+            throw new IllegalArgumentException();
+        
         mileage+=miles;
     }
 
-    public int roadTrip(List<Double> milesEachDay) {
+    public int roadTrip(List<Double> milesEachDay) throws IllegalArgumentException {
+        
         return 0;
     }
 }
