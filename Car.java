@@ -48,7 +48,13 @@ public abstract class Car {
     }
 
     public int roadTrip(List<Double> milesEachDay) throws IllegalArgumentException {
-        
-        return 0;
+        for (int i = 0; i < milesEachDay.size(); i++) {
+            if (milesEachDay.get(i)<0)
+                throw new IllegalArgumentException();
+        }
+
+        int totalDays = 0;
+
+        return totalDays;
     }
 }
