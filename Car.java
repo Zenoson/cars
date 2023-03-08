@@ -1,8 +1,14 @@
 import java.util.List;
 
 public abstract class Car {
-    public Car(String make, String model, double startingMileage) {
+    String make;
+    String model;
+    double mileage;
 
+    public Car(String make, String model, double startingMileage) {
+        this.make = make;
+        this.model = model;
+        this.mileage = startingMileage;
     }
 
     public Car(String make, String model) {
