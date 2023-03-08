@@ -1,13 +1,13 @@
-public class ChevroletBird extends GasPoweredCar {
+public class ChevroletBird extends ElectricCar {
     /** Chevrolet Birds have a 250 mile range on a full charge. They
     start with their wings retracted.*/
     public ChevroletBird(double startingMileage) {
-
+        super("Chevrolet", "Bird", startingMileage, 250);
     }
 
     /** Defaults mileage to 0. */
     public ChevroletBird() {
-
+        this(0);
     }
 
     /** Returns whether the wings are currently extended. */

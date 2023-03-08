@@ -1,16 +1,19 @@
 public class TeslaModelZ extends ElectricCar {
+    int modelNum;
+
     /** modelNum specifies the model number. Tesla cares about that
     stuff. Tesla Model Z’s have a 340 mile range on a full charge.
     For a Tesla, the make is Tesla. The model is Z. The model number is
     an additional value.
     */
     public TeslaModelZ(double startingMileage, int modelNum) {
-
+        super("Tesla", "Z", startingMileage, 340);
+        this.modelNum = modelNum;
     }
 
     /** Defaults mileage to 0. */
     public TeslaModelZ(int modelNum) {
-        
+        this(0, modelNum);
     }
 
     /** Returns the model number.*/

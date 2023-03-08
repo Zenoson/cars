@@ -1,15 +1,17 @@
 public class ElectricCar extends Car {
+    double milesOnMaxCharge;
+
     /** Note: Car begins with a full charge (and thus range).
     @throws IllegalArgumentException if milesOnMaxCharge is nonpositive.*/
-    public ElectricCar(String make, String model, double startingMileage,
-    double milesOnMaxCharge) {
-
+    public ElectricCar(String make, String model, double startingMileage, double milesOnMaxCharge) {
+        super(make, model, startingMileage);
+        this.milesOnMaxCharge = milesOnMaxCharge;
     }
+
     /** Defaults mileage to 0.
     @throws IllegalArgumentException if milesOnMaxCharge is nonpositive.*/
-    public ElectricCar (String make, String model, double
-    milesOnMaxCharge) {
-
+    public ElectricCar (String make, String model, double milesOnMaxCharge) {
+        super(make, model, 0);
     }
 
     /** Drives the full given number of miles.
