@@ -1,3 +1,5 @@
+package cars;
+
 public class GasPoweredCar extends Car {
     double mpg;
     double fuelCapacityGallons;
@@ -41,7 +43,7 @@ public class GasPoweredCar extends Car {
     }
 
     protected void decreaseFuelLevel(double miles) {
-        
+
     }
 
 }
