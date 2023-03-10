@@ -1,4 +1,4 @@
-package cars;
+package vehicle;
 
 public interface Flying {
     /** @throws IllegalArgumentException if miles is negative. */

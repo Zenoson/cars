@@ -1,4 +1,4 @@
-package cars;
+package vehicle;
 
 public class GasPoweredCar extends Car {
     double mpg;

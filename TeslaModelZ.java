@@ -1,4 +1,4 @@
-package cars;
+package vehicle;
 
 public class TeslaModelZ extends ElectricCar {
     int modelNum;

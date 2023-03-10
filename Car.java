@@ -1,4 +1,4 @@
-package cars;
+package vehicle;
 import java.util.List;
 
 public abstract class Car {
