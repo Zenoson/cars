@@ -55,7 +55,3 @@ public abstract class Car {
         }
 
         int totalDays = 0;
-
-        return totalDays;
-    }
-}
