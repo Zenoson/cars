@@ -14,6 +14,6 @@ public class HondaAccordian extends GasPoweredCar {
 
     @Override
     public String toString() {
-        return "";
+        return modelYear + " " + super.toString();
     }
 }

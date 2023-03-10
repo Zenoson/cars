@@ -24,7 +24,7 @@ public abstract class Car {
 
     @Override
     public String toString() {
-        return String.format("%s $s ($.1f mi)", make, model, mileage);
+        return String.format("%s %s (%.1f mi)", make, model, mileage);
     }
 
     public double getMileage() {
