@@ -1,27 +1,42 @@
+package cars;
+
 public class ElectricCar extends Car {
-    /** Note: Car begins with a full charge (and thus range).
-    @throws IllegalArgumentException if milesOnMaxCharge is nonpositive.*/
-    public ElectricCar(String make, String model, double startingMileage,
-    double milesOnMaxCharge) {
+    double milesOnMaxCharge;
 
+    /**
+     * Note: Car begins with a full charge (and thus range).
+     * 
+     * @throws IllegalArgumentException if milesOnMaxCharge is nonpositive.
+     */
+    public ElectricCar(String make, String model, double startingMileage, double milesOnMaxCharge) {
+        super(make, model, startingMileage);
+        this.milesOnMaxCharge = milesOnMaxCharge;
     }
-    /** Defaults mileage to 0.
-    @throws IllegalArgumentException if milesOnMaxCharge is nonpositive.*/
-    public ElectricCar (String make, String model, double
-    milesOnMaxCharge) {
 
+    /**
+     * Defaults mileage to 0.
+     * 
+     * @throws IllegalArgumentException if milesOnMaxCharge is nonpositive.
+     */
+    public ElectricCar(String make, String model, double milesOnMaxCharge) {
+        super(make, model, 0);
     }
 
-    /** Drives the full given number of miles.
-    @throws IllegalArgumentException if miles is negative.
-    @throws IllegalArgumentException if miles is too high given the
-    current charge.*/
+    /**
+     * Drives the full given number of miles.
+     * 
+     * @throws IllegalArgumentException if miles is negative.
+     * @throws IllegalArgumentException if miles is too high given the
+     *                                  current charge.
+     */
     public void drive(double miles) {
 
     }
 
-    /** Returns how many more miles the car can currently go without
-    recharging. */
+    /**
+     * Returns how many more miles the car can currently go without
+     * recharging.
+     */
     public double getRemainingRange() {
         return 0;
     }
@@ -36,8 +51,10 @@ public class ElectricCar extends Car {
 
     }
 
-    /** Decreases the amount of energy in the battery based by the number
-    of miles passed as an argument. */
+    /**
+     * Decreases the amount of energy in the battery based by the number
+     * of miles passed as an argument.
+     */
     protected void decreaseCharge(double miles) {
     }
 }

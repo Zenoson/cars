@@ -1,3 +1,4 @@
+package cars;
 import java.util.List;
 
 public abstract class Car {
@@ -41,10 +42,10 @@ public abstract class Car {
     public abstract double getRemainingRange();
 
     protected void addMileage(double miles) throws IllegalArgumentException {
-        if (miles<0)
+        if (miles < 0)
             throw new IllegalArgumentException();
-        
-        mileage+=miles;
+
+        mileage += miles;
     }
 
     public int roadTrip(List<Double> milesEachDay) throws IllegalArgumentException {
