@@ -19,7 +19,7 @@ public class GasPoweredCar extends Car {
     }
 
     public double getMPG() {
-        return 1.0;
+        return mpg;
     }
 
     public double getFuelLevel() {
@@ -27,11 +27,11 @@ public class GasPoweredCar extends Car {
     }
 
     public double getFuelCapacity() {
-        return 10.0;
+        return fuelCapacityGallons;
     }
 
     public void refillTank() {
-
+        
     }
 
     public double getRemainingRange() {
